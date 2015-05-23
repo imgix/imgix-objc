@@ -8,7 +8,7 @@
 
 #import "IGXFormat.h"
 
-NSString * __nullable IGXFormatString(IGXFormat format) {
+NSString * __igx_nullable IGXFormatString(IGXFormat format) {
 	switch (format) {
 		case IGXFormatIdentity: {
 			return nil;
@@ -44,7 +44,7 @@ NSString * __nullable IGXFormatString(IGXFormat format) {
 }
 
 
-IGXFormat IGXFormatFromString(NSString *__nonnull string) {
+IGXFormat IGXFormatFromString(NSString *__igx_nonnull string) {
 	if (!string || string.length == 0) {
 		return IGXFormatIdentity;
 	}

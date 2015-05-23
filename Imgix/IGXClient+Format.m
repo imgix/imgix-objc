@@ -11,11 +11,11 @@
 
 @implementation IGXClient (Format)
 
-- (void)setDownloadFileName:(nullable NSString *)downloadFileName {
+- (void)setDownloadFileName:(igx_nullable NSString *)downloadFileName {
 	self.options[@"dl"] = downloadFileName;
 }
 
-- (nullable NSString *)downloadFileName {
+- (igx_nullable NSString *)downloadFileName {
 	return self.options[@"dl"];
 }
 

@@ -17,6 +17,6 @@
  The background color to use when transparency is encountered. The default is transparent white.
  For image formats that do not support transparency, set this value to a non-transparent color.
  */
-//@property (nullable, nonatomic) CGColorRef backgroundColor;
+//@property (nonatomic, igx_nullable) CGColorRef backgroundColor;
 
 @end

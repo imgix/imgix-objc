@@ -12,6 +12,6 @@
 
 @interface IGXClient (Private)
 
-@property (nonnull, nonatomic, readonly) NSMutableDictionary *options;
+@property (nonatomic, readonly, igx_nonnull) NSMutableDictionary *options;
 
 @end

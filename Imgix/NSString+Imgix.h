@@ -12,6 +12,6 @@
 
 @interface NSString (Imgix)
 
-- (nonnull NSString *)imgix_MD5;
+- (igx_nonnull NSString *)imgix_MD5;
 
 @end

@@ -117,5 +117,5 @@ typedef NS_ENUM(NSUInteger, IGXFormat) {
 	IGXFormatWebP
 };
 
-extern  NSString * __nullable IGXFormatString(IGXFormat format);
-extern  IGXFormat IGXFormatFromString(NSString *__nullable string);
+extern  NSString * __igx_nullable IGXFormatString(IGXFormat format);
+extern  IGXFormat IGXFormatFromString(NSString *__igx_nullable string);

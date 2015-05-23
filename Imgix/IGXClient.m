@@ -34,7 +34,7 @@
 	return self;
 }
 
-- (nonnull instancetype)initWithHost:(nonnull NSString *)host token:(nullable NSString *)token {
+- (igx_nonnull instancetype)initWithHost:(igx_nonnull NSString *)host token:(igx_nullable NSString *)token {
 	if ((self = [self init])) {
 		self.host = host;
 		self.token = token;
@@ -75,7 +75,7 @@
 	return query;
 }
 
-- (nullable NSURL *)URLWithPath:(nonnull NSString *)path {
+- (igx_nullable NSURL *)URLWithPath:(igx_nonnull NSString *)path {
 	NSString *scheme = self.secure ? @"https" : @"http";
 
 	if (![path hasPrefix:@"/"]) {

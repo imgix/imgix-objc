@@ -14,18 +14,18 @@
 
 #pragma mark - Initializers
 
-- (nonnull instancetype)initWithHost:(nonnull NSString *)host token:(nullable NSString *)token;
+- (igx_nonnull instancetype)initWithHost:(nonnull NSString *)host token:(nullable NSString *)token;
 
 
 #pragma mark - Configuration
 
-@property (nonnull, nonatomic, readonly) NSString *host;
-@property (nullable, nonatomic, readonly) NSString *token;
+@property (nonatomic, readonly, igx_nonnull) NSString *host;
+@property (nonatomic, readonly, igx_nullable) NSString *token;
 @property (nonatomic) BOOL secure;
 
 
 #pragma mark - URL Building
 
-- (nullable NSURL *)URLWithPath:(nonnull NSString *)path;
+- (igx_nullable NSURL *)URLWithPath:(igx_nonnull NSString *)path;
 
 @end

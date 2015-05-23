@@ -16,7 +16,7 @@
  Disired download file name. When set with an `a` tag, will force a browser to download an image
  instead of opening the image in a new window.
  */
-@property (nullable, nonatomic) NSString *downloadFileName;
+@property (nonatomic, igx_nullable) NSString *downloadFileName;
 
 /**
  The output format to convert the image to.

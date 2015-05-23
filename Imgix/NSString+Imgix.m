@@ -11,7 +11,7 @@
 
 @implementation NSString (Imgix)
 
-- (nonnull NSString *)imgix_MD5 {
+- (igx_nonnull NSString *)imgix_MD5 {
 	const char *cstr = [self UTF8String];
 	unsigned char digest[CC_MD5_DIGEST_LENGTH];
 	CC_MD5(cstr, (CC_LONG)strlen(cstr), digest);

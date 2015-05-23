@@ -14,7 +14,7 @@
 
 #pragma mark - Initializers
 
-- (igx_nonnull instancetype)initWithHost:(nonnull NSString *)host token:(nullable NSString *)token;
+- (igx_nonnull instancetype)initWithHost:(igx_nonnull NSString *)host token:(igx_nullable NSString *)token;
 
 
 #pragma mark - Configuration

@@ -10,8 +10,8 @@
 #import "NSString+Imgix.h"
 
 @interface IGXClient ()
-@property (nonnull, nonatomic, readwrite) NSString *host;
-@property (nullable, nonatomic, readwrite) NSString *token;
+@property (nonatomic, readwrite, igx_nonnull) NSString *host;
+@property (nonatomic, readwrite, igx_nullable) NSString *token;
 @property (nonatomic) NSMutableDictionary *options;
 @end
 

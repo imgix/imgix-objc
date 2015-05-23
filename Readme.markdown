@@ -2,6 +2,8 @@
 
 ⚠️ This is a work in progress. ⚠️
 
+[![Build Status](https://travis-ci.org/soffes/imgix-objc.svg?branch=master)](https://travis-ci.org/soffes/imgix-objc) [![Coverage Status](https://coveralls.io/repos/soffes/imgix-objc/badge.svg)](https://coveralls.io/r/soffes/imgix-objc)
+
 Unofficial [Imgix](http://imgix.com) client for iOS.
 
 Written in Objective-C for maximum flexiblity. It's annotated with [nullability](https://developer.apple.com/swift/blog/?id=25) so it works well with Swift.

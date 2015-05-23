@@ -1,7 +1,5 @@
 language: objective-c
-xcode_project: Imgix.xcodeproj
-xcode_scheme: Imgix
-xcode_sdk: iphonesimulator
-before_install: rvm use $RVM_RUBY_VERSION
-install: bundle install --without=documentation --path ../travis_bundle_dir
+install:
+- bundle install --jobs=3 --retry=3
+script: bundle exec rake test
 after_success: slather

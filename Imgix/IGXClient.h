@@ -8,6 +8,8 @@
 
 @import Foundation;
 
+#import "IGXNullability.h"
+
 @interface IGXClient : NSObject
 
 #pragma mark - Initializers

@@ -8,6 +8,7 @@
 
 #import "IGXClient.h"
 #import "IGXFormat.h"
+#import "IGXNullability.h"
 
 @interface IGXClient (Format)
 

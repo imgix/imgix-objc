@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Sam Soffes. All rights reserved.
 //
 
+#import "IGXNullability.h"
+
 @class NSMutableDictionary;
 
 @interface IGXClient (Private)

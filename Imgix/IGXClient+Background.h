@@ -9,6 +9,7 @@
 @import CoreGraphics;
 
 #import "IGXClient.h"
+#import "IGXNullability.h"
 
 @interface IGXClient (Background)
 

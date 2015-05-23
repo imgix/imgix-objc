@@ -8,6 +8,8 @@
 
 @import Foundation;
 
+#import "IGXNullability.h"
+
 typedef NS_ENUM(NSUInteger, IGXFormat) {
 	/**
 	 Default. No change in image format.

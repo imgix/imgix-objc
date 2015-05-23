@@ -8,6 +8,8 @@
 
 @import Foundation;
 
+#import "IGXNullability.h"
+
 @interface NSString (Imgix)
 
 - (nonnull NSString *)imgix_MD5;

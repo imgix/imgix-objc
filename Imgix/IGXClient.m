@@ -12,7 +12,7 @@
 @interface IGXClient ()
 @property (nonatomic, readwrite, igx_nonnull) NSString *host;
 @property (nonatomic, readwrite, igx_nullable) NSString *token;
-@property (nonatomic) NSMutableDictionary *options;
+@property (nonatomic, readonly) NSMutableDictionary *options;
 @end
 
 @implementation IGXClient
@@ -89,6 +89,17 @@
 
 	NSString *string = [[NSString alloc] initWithFormat:@"%@://%@%@%@", scheme, self.host, path, query];
 	return [[NSURL alloc] initWithString:string];
+}
+
+
+#pragma mark - Private
+
+- (void)setBool:(BOOL)value forKey:(igx_nonnull NSString *)key {
+	if (value) {
+		self.options[key] = @"true";
+	} else {
+		[self.options removeObjectForKey:key];
+	}
 }
 
 @end

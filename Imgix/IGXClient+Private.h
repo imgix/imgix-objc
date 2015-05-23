@@ -14,4 +14,6 @@
 
 @property (nonatomic, readonly, igx_nonnull) NSMutableDictionary *options;
 
+- (void)setBool:(BOOL)value forKey:(igx_nonnull NSString *)key;
+
 @end

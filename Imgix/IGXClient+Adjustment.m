@@ -57,11 +57,7 @@
 }
 
 - (void)setInvert:(BOOL)invert {
-	if (invert) {
-		self.options[@"invert"] = @"true";
-	} else {
-		[self.options removeObjectForKey:@"invert"];
-	}
+	[self setBool:invert forKey:@"invert"];
 }
 
 - (BOOL)invert {

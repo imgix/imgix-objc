@@ -55,7 +55,7 @@
 }
 
 - (void)setLoop:(BOOL)loop {
-	self.options[@"loop"] = @(loop);
+	[self setBool:loop forKey:@"loop"];
 }
 
 - (BOOL)loop {
@@ -63,7 +63,7 @@
 }
 
 - (void)setReverse:(BOOL)reverse {
-	self.options[@"reverse"] = @(reverse);
+	[self setBool:reverse forKey:@"reverse"];
 }
 
 - (BOOL)reverse {

@@ -11,7 +11,11 @@
 
 @interface IGXClient (Format)
 
-//@property (nonatomic) BOOL download;
+/**
+ Disired download file name. When set with an `a` tag, will force a browser to download an image
+ instead of opening the image in a new window.
+ */
+@property (nullable, nonatomic) NSString *downloadFileName;
 
 /**
  The output format to convert the image to.
@@ -27,9 +31,9 @@
  */
 @property (nonatomic) NSUInteger quality;
 
-//@property (nonatomic) NSUInteger fps;
-//@property (nonatomic) NSUInteger frame;
-//@property (nonatomic) BOOL loop;
-//@property (nonatomic) BOOL reverse;
+@property (nonatomic) NSUInteger framesPerSecond;
+@property (nonatomic) NSUInteger frame;
+@property (nonatomic) BOOL loop;
+@property (nonatomic) BOOL reverse;
 
 @end

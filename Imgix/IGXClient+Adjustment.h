@@ -63,7 +63,7 @@
 /**
  Sharpens the image details using luminance sharpening. Valid values are in the range 0 - 100. The default value is 0 which leaves the image unchanged.
  */
-@property (nonatomic) NSInteger sharpen;
+@property (nonatomic) NSUInteger sharpen;
 
 /**
  Sharpens the image details using an unsharp mask. Valid values are any floating point number. The

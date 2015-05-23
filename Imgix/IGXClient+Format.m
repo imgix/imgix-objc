@@ -11,12 +11,20 @@
 
 @implementation IGXClient (Format)
 
+- (void)downloadFileName:(nullable NSString *)downloadFileName {
+	self.options[@"dl"] = downloadFileName;
+}
+
+- (nullable NSString *)downloadFileName {
+	return self.options[@"dl"];
+}
+
 - (void)setFormat:(IGXFormat)format {
-	self.options[@"format"] = IGXFormatString(format);
+	self.options[@"fm"] = IGXFormatString(format);
 }
 
 - (IGXFormat)format {
-	return IGXFormatFromString(self.options[@"format"]);
+	return IGXFormatFromString(self.options[@"fm"]);
 }
 
 - (void)setQuality:(NSUInteger)quality {
@@ -26,7 +34,40 @@
 
 - (NSUInteger)quality {
 	NSNumber *value = self.options[@"q"];
-	return value ? [value doubleValue] : 75;
+	return value ? [value unsignedIntegerValue] : 75;
+}
+
+- (void)setFramesPerSecond:(NSUInteger)framesPerSecond {
+	self.options[@"fps"] = @(framesPerSecond);
+}
+
+- (NSUInteger)framesPerSecond {
+	return [self.options[@"fps"] unsignedIntegerValue];
+}
+
+
+- (void)setFrame:(NSUInteger)frame {
+	self.options[@"frame"] = @(frame);
+}
+
+- (NSUInteger)frame {
+	return [self.options[@"frame"] unsignedIntegerValue];
+}
+
+- (void)setLoop:(BOOL)loop {
+	self.options[@"loop"] = @(loop);
+}
+
+- (BOOL)loop {
+	return [self.options[@"loop"] boolValue];
+}
+
+- (void)setReverse:(BOOL)reverse {
+	self.options[@"reverse"] = @(reverse);
+}
+
+- (BOOL)reverse {
+	return [self.options[@"reverse"] boolValue];
 }
 
 @end

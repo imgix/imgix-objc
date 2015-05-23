@@ -82,13 +82,13 @@
 	return [self.options[@"shad"] integerValue];
 }
 
-- (void)setSharpen:(NSInteger)sharpen {
+- (void)setSharpen:(NSUInteger)sharpen {
 	NSAssert(sharpen >= 0 && sharpen <= 100, @"[IGXClient] Invalid sharpen. Value must be between 0 and 100.");
 	self.options[@"sharp"] = @(sharpen);
 }
 
-- (NSInteger)sharpen {
-	return [self.options[@"sharp"] integerValue];
+- (NSUInteger)sharpen {
+	return [self.options[@"sharp"] unsignedIntegerValue];
 }
 
 - (void)setUnsharpMask:(NSInteger)unsharpMask {

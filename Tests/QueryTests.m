@@ -6,26 +6,24 @@
 //  Copyright (c) 2015 Sam Soffes. All rights reserved.
 //
 
-@import XCTest;
-@import Imgix;
+#import "TestHelper.h"
 
-@interface QueryTests : XCTestCase
+@interface QueryTests : TestCase
 @end
 
 @implementation QueryTests
 
 - (void)testQueryStringCombining {
-	IGXClient *client = [[IGXClient alloc] initWithHost:@"nothingmagical.imgix.net" token:nil];
-	XCTAssertNil([client URLWithPath:@"sam.jpg"].query);
+	XCTAssertNil([self.client URLWithPath:@"sam.jpg"].query);
 
-	client.brightness = 50;
-	XCTAssertEqualObjects(@"bri=50", [client URLWithPath:@"sam.jpg"].query);
+	self.client.brightness = 50;
+	XCTAssertEqualObjects(@"bri=50", [self.client URLWithPath:@"sam.jpg"].query);
 
-	client.exposure = 20;
-	XCTAssertEqualObjects(@"bri=50&exp=20", [client URLWithPath:@"sam.jpg"].query);
+	self.client.exposure = 20;
+	XCTAssertEqualObjects(@"bri=50&exp=20", [self.client URLWithPath:@"sam.jpg"].query);
 
-	client.contrast = 30;
-	XCTAssertEqualObjects(@"bri=50&con=30&exp=20", [client URLWithPath:@"sam.jpg"].query);
+	self.client.contrast = 30;
+	XCTAssertEqualObjects(@"bri=50&con=30&exp=20", [self.client URLWithPath:@"sam.jpg"].query);
 }
 
 - (void)testSignedQueryStringCombining {

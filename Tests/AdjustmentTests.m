@@ -6,24 +6,12 @@
 //  Copyright (c) 2015 Sam Soffes. All rights reserved.
 //
 
-@import XCTest;
-@import Imgix;
+#import "TestHelper.h"
 
-@interface AdjustmentTests : XCTestCase
-@property (nonatomic, readonly) IGXClient *client;
+@interface AdjustmentTests : TestCase
 @end
 
 @implementation AdjustmentTests
-
-@synthesize client = _client;
-
-- (IGXClient *)client {
-	if (!_client) {
-		_client = [[IGXClient alloc] initWithHost:@"nothingmagical.imgix.net" token:nil];
-	}
-	return _client;
-}
-
 
 - (void)testBrightness {
 	self.client.brightness = 50;

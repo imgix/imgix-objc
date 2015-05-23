@@ -10,6 +10,9 @@
 #import "IGXFormat.h"
 #import "IGXNullability.h"
 
+/**
+ Select the output format of your image.
+ */
 @interface IGXClient (Format)
 
 /**

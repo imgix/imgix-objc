@@ -11,6 +11,9 @@
 #import "IGXClient.h"
 #import "IGXNullability.h"
 
+/**
+ Control the background of your image.
+ */
 @interface IGXClient (Background)
 
 /**

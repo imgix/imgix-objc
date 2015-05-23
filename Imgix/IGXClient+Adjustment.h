@@ -8,6 +8,9 @@
 
 #import "IGXClient.h"
 
+/**
+ Make adjustments to an image.
+ */
 @interface IGXClient (Adjustment)
 
 /**

@@ -21,3 +21,4 @@ FOUNDATION_EXPORT const unsigned char ImgixVersionString[];
 #import <Imgix/IGXClient+Background.h>
 #import <Imgix/IGXClient+Format.h>
 #import <Imgix/IGXClient+PDF.h>
+#import <Imgix/IGXClient+Stylize.h>

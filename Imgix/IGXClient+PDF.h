@@ -8,6 +8,13 @@
 
 #import "IGXClient.h"
 
+/**
+ Work with Portable Document Format files. Vector assets in pdf files will scale before rasterizing.
+ This is ideal for scaling up icons and graphic marks.
+
+ Extremely large PDF files may timeout during the intial fetch depending on the speed of the origin.
+ If you are experiencing issues with large PDFs, please contact support .
+ */
 @interface IGXClient (PDF)
 
 /**

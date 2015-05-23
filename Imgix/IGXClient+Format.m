@@ -11,7 +11,7 @@
 
 @implementation IGXClient (Format)
 
-- (void)downloadFileName:(nullable NSString *)downloadFileName {
+- (void)setDownloadFileName:(nullable NSString *)downloadFileName {
 	self.options[@"dl"] = downloadFileName;
 }
 

@@ -40,24 +40,28 @@
 
 - (void)setGamma:(NSInteger)gamma {
 	NSAssert(gamma >= -100 && gamma <= 100, @"[IGXClient] Invalid gamma. Value must be between -100 and 100.");
-	self.options[@"gamma"] = @(gamma);
+	self.options[@"gam"] = @(gamma);
 }
 
 - (NSInteger)gamma {
 	return [self.options[@"gam"] integerValue];
 }
 
-- (void)setHighlight:(NSInteger)highlight {
-	NSAssert(highlight >= -100 && highlight <= 100, @"[IGXClient] Invalid highlight. Value must be between -100 and 100.");
-	self.options[@"high"] = @(highlight);
+- (void)setHighlights:(NSInteger)highlights {
+	NSAssert(highlights >= -100 && highlights <= 100, @"[IGXClient] Invalid highlights. Value must be between -100 and 100.");
+	self.options[@"high"] = @(highlights);
 }
 
-- (NSInteger)highlight {
+- (NSInteger)highlights {
 	return [self.options[@"high"] integerValue];
 }
 
 - (void)setInvert:(BOOL)invert {
-	self.options[@"invert"] = @(invert);
+	if (invert) {
+		self.options[@"invert"] = @"true";
+	} else {
+		[self.options removeObjectForKey:@"invert"];
+	}
 }
 
 - (BOOL)invert {
@@ -73,12 +77,12 @@
 	return [self.options[@"sat"] integerValue];
 }
 
-- (void)setShadow:(NSInteger)shadow {
-	NSAssert(shadow >= -100 && shadow <= 100, @"[IGXClient] Invalid shadow. Value must be between -100 and 100.");
-	self.options[@"shad"] = @(shadow);
+- (void)setShadows:(NSInteger)shadows {
+	NSAssert(shadows >= -100 && shadows <= 100, @"[IGXClient] Invalid shadows. Value must be between -100 and 100.");
+	self.options[@"shad"] = @(shadows);
 }
 
-- (NSInteger)shadow {
+- (NSInteger)shadows {
 	return [self.options[@"shad"] integerValue];
 }
 
@@ -91,15 +95,16 @@
 	return [self.options[@"sharp"] unsignedIntegerValue];
 }
 
-- (void)setUnsharpMask:(NSInteger)unsharpMask {
+- (void)setUnsharpMask:(double)unsharpMask {
 	self.options[@"usm"] = @(unsharpMask);
 }
 
-- (NSInteger)unsharpMask {
-	return [self.options[@"usm"] integerValue];
+- (double)unsharpMask {
+	return [self.options[@"usm"] doubleValue];
 }
 
 - (void)setUnsharpMaskRadius:(double)unsharpMaskRadius {
+	NSAssert(unsharpMaskRadius >= 0.0, @"[IGXClient] Invalid unsharp mask radius. Value must be above 0.");
 	self.options[@"usmrad"] = @(unsharpMaskRadius);
 }
 

@@ -22,7 +22,7 @@
 		21B109A01B10E24200C7738C /* IGXClient+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B1099E1B10E24200C7738C /* IGXClient+Format.m */; };
 		21B109A31B10E28300C7738C /* IGXClient+Background.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B109A11B10E28300C7738C /* IGXClient+Background.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21B109A41B10E28300C7738C /* IGXClient+Background.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109A21B10E28300C7738C /* IGXClient+Background.m */; };
-		21B109AA1B10E9F800C7738C /* IGXClient+PDF.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B109A81B10E9F800C7738C /* IGXClient+PDF.h */; };
+		21B109AA1B10E9F800C7738C /* IGXClient+PDF.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B109A81B10E9F800C7738C /* IGXClient+PDF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21B109AB1B10E9F800C7738C /* IGXClient+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109A91B10E9F800C7738C /* IGXClient+PDF.m */; };
 		21EB0C8E1B10074F00CDC863 /* Imgix.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EB0C8D1B10074F00CDC863 /* Imgix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21EB0C941B10074F00CDC863 /* Imgix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB0C881B10074F00CDC863 /* Imgix.framework */; };

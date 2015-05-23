@@ -39,7 +39,7 @@
  Adjusts the highlight tonal mapping of an image while preserving spatial detail. Valid values are
  in the range `-100` to `100`. The default value is 0 which leaves the image unchanged.
  */
-@property (nonatomic) NSInteger highlight;
+@property (nonatomic) NSInteger highlights;
 
 /**
  Inverts all the pixel colors and brightness values within the image producing a negative of the
@@ -58,10 +58,11 @@
  Adjusts the shadow tonal mapping of an image while preserving spatial detail. Valid values are in
  the range `-100` to `100`. The default value is `0` which leaves the image unchanged.
  */
-@property (nonatomic) NSInteger shadow;
+@property (nonatomic) NSInteger shadows;
 
 /**
- Sharpens the image details using luminance sharpening. Valid values are in the range 0 - 100. The default value is 0 which leaves the image unchanged.
+ Sharpens the image details using luminance sharpening. Valid values are in the range `0` - `100`.
+ The default value is `0` which leaves the image unchanged.
  */
 @property (nonatomic) NSUInteger sharpen;
 
@@ -73,7 +74,7 @@
  For images with general noise, we suggest using the sharp parameter instead. Unsharp mask and
  radius are better for thumbnails and fine-tuned sharpening.
  */
-@property (nonatomic) NSInteger unsharpMask;
+@property (nonatomic) double unsharpMask;
 
 /**
  Determines how many pixels should be included in enhancing the contrast when using the unsharp mask

@@ -20,7 +20,12 @@
 }
 
 - (void)setFormat:(IGXFormat)format {
-	self.options[@"fm"] = IGXFormatString(format);
+	NSString *value = IGXFormatString(format);
+	if (value) {
+		self.options[@"fm"] = value;
+	} else {
+		[self.options removeObjectForKey:@"fm"];
+	}
 }
 
 - (IGXFormat)format {

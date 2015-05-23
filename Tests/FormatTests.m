@@ -14,6 +14,7 @@
 @implementation FormatTests
 
 - (void)testFormatToString {
+	XCTAssertEqualObjects(nil, IGXFormatString(IGXFormatIdentity));
 	XCTAssertEqualObjects(@"gif", IGXFormatString(IGXFormatGIF));
 	XCTAssertEqualObjects(@"jp2", IGXFormatString(IGXFormatJPEG2000));
 	XCTAssertEqualObjects(@"jpg", IGXFormatString(IGXFormatJPEG));
@@ -26,6 +27,7 @@
 }
 
 - (void)testStringToFormat {
+	XCTAssertEqual(IGXFormatIdentity, IGXFormatFromString(nil));
 	XCTAssertEqual(IGXFormatGIF, IGXFormatFromString(@"gif"));
 	XCTAssertEqual(IGXFormatJPEG2000, IGXFormatFromString(@"jp2"));
 	XCTAssertEqual(IGXFormatJPEG, IGXFormatFromString(@"jpg"));
@@ -35,6 +37,8 @@
 	XCTAssertEqual(IGXFormatMP4, IGXFormatFromString(@"mp4"));
 	XCTAssertEqual(IGXFormatPNG, IGXFormatFromString(@"png"));
 	XCTAssertEqual(IGXFormatWebP, IGXFormatFromString(@"webp"));
+
+	XCTAssertThrows(IGXFormatFromString(@"crap"));
 }
 
 
@@ -47,9 +51,15 @@
 }
 
 - (void)testFormat {
+	XCTAssertEqual(IGXFormatIdentity, self.client.format);
+	
 	self.client.format = IGXFormatJSON;
 	XCTAssertEqualObjects(@"fm=json", [self.client URLWithPath:@"sam.jpg"].query);
 	XCTAssertEqual(IGXFormatJSON, self.client.format);
+
+	self.client.format = IGXFormatIdentity;
+	XCTAssertNil([self.client URLWithPath:@"sam.jpg"].query);
+	XCTAssertEqual(IGXFormatIdentity, self.client.format);
 }
 
 - (void)testQuality {

@@ -22,6 +22,8 @@
 		21B109A01B10E24200C7738C /* IGXClient+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B1099E1B10E24200C7738C /* IGXClient+Format.m */; };
 		21B109A31B10E28300C7738C /* IGXClient+Background.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B109A11B10E28300C7738C /* IGXClient+Background.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21B109A41B10E28300C7738C /* IGXClient+Background.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109A21B10E28300C7738C /* IGXClient+Background.m */; };
+		21B109AA1B10E9F800C7738C /* IGXClient+PDF.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B109A81B10E9F800C7738C /* IGXClient+PDF.h */; };
+		21B109AB1B10E9F800C7738C /* IGXClient+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109A91B10E9F800C7738C /* IGXClient+PDF.m */; };
 		21EB0C8E1B10074F00CDC863 /* Imgix.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EB0C8D1B10074F00CDC863 /* Imgix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21EB0C941B10074F00CDC863 /* Imgix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB0C881B10074F00CDC863 /* Imgix.framework */; };
 		21EB0CA61B100A9E00CDC863 /* IGXClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EB0CA41B100A9E00CDC863 /* IGXClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -55,6 +57,8 @@
 		21B1099E1B10E24200C7738C /* IGXClient+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IGXClient+Format.m"; sourceTree = "<group>"; };
 		21B109A11B10E28300C7738C /* IGXClient+Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IGXClient+Background.h"; sourceTree = "<group>"; };
 		21B109A21B10E28300C7738C /* IGXClient+Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IGXClient+Background.m"; sourceTree = "<group>"; };
+		21B109A81B10E9F800C7738C /* IGXClient+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IGXClient+PDF.h"; sourceTree = "<group>"; };
+		21B109A91B10E9F800C7738C /* IGXClient+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IGXClient+PDF.m"; sourceTree = "<group>"; };
 		21EB0C881B10074F00CDC863 /* Imgix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Imgix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EB0C8C1B10074F00CDC863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21EB0C8D1B10074F00CDC863 /* Imgix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Imgix.h; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				21B109A21B10E28300C7738C /* IGXClient+Background.m */,
 				21B1099D1B10E24200C7738C /* IGXClient+Format.h */,
 				21B1099E1B10E24200C7738C /* IGXClient+Format.m */,
+				21B109A81B10E9F800C7738C /* IGXClient+PDF.h */,
+				21B109A91B10E9F800C7738C /* IGXClient+PDF.m */,
 			);
 			name = Client;
 			sourceTree = "<group>";
@@ -176,6 +182,7 @@
 				21B109A31B10E28300C7738C /* IGXClient+Background.h in Headers */,
 				21EB0C8E1B10074F00CDC863 /* Imgix.h in Headers */,
 				21B109841B10CF9100C7738C /* NSString+Imgix.h in Headers */,
+				21B109AA1B10E9F800C7738C /* IGXClient+PDF.h in Headers */,
 				21B109891B10D66300C7738C /* IGXFormat.h in Headers */,
 				21B1099F1B10E24200C7738C /* IGXClient+Format.h in Headers */,
 				21B1099C1B10E1FC00C7738C /* IGXClient+Private.h in Headers */,
@@ -287,6 +294,7 @@
 				21B109A01B10E24200C7738C /* IGXClient+Format.m in Sources */,
 				21EB0CA71B100A9E00CDC863 /* IGXClient.m in Sources */,
 				21B1099A1B10E16200C7738C /* IGXClient+Adjustment.m in Sources */,
+				21B109AB1B10E9F800C7738C /* IGXClient+PDF.m in Sources */,
 				21B1098F1B10D82000C7738C /* IGXFormat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

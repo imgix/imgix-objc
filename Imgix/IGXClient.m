@@ -78,6 +78,11 @@
 - (igx_nullable NSURL *)URLWithPath:(igx_nonnull NSString *)path {
 	NSString *scheme = self.secure ? @"https" : @"http";
 
+    if ([path hasPrefix:@"http"]) {
+        path = [path stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+        path = [path stringByReplacingOccurrencesOfString:@"=" withString:@"%3D"];
+    }
+
 	if (![path hasPrefix:@"/"]) {
 		path = [@"/" stringByAppendingString:path];
 	}

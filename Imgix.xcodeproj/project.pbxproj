@@ -36,6 +36,7 @@
 		21EB0C941B10074F00CDC863 /* Imgix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB0C881B10074F00CDC863 /* Imgix.framework */; };
 		21EB0CA61B100A9E00CDC863 /* IGXClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EB0CA41B100A9E00CDC863 /* IGXClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21EB0CA71B100A9E00CDC863 /* IGXClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB0CA51B100A9E00CDC863 /* IGXClient.m */; };
+		A25F62D71B1265D800A16FF4 /* PathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A25F62D61B1265D800A16FF4 /* PathTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		21EB0C931B10074F00CDC863 /* ImgixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImgixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EB0CA41B100A9E00CDC863 /* IGXClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGXClient.h; sourceTree = "<group>"; };
 		21EB0CA51B100A9E00CDC863 /* IGXClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGXClient.m; sourceTree = "<group>"; };
+		A25F62D61B1265D800A16FF4 /* PathTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				21B109951B10DC6200C7738C /* AdjustmentTests.m */,
 				21BAB1271B11078100D32A0C /* BackgroundTests.m */,
 				21BAB1291B11078900D32A0C /* FormatTests.m */,
+				A25F62D61B1265D800A16FF4 /* PathTests.m */,
 				21BAB12B1B11079200D32A0C /* PDFTests.m */,
 				214FC3F31B1139A500B04DDF /* StylizeTests.m */,
 				21B1097F1B10CC1600C7738C /* Info.plist */,
@@ -333,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21BAB12A1B11078900D32A0C /* FormatTests.m in Sources */,
+				A25F62D71B1265D800A16FF4 /* PathTests.m in Sources */,
 				214FC3F41B1139A500B04DDF /* StylizeTests.m in Sources */,
 				21BAB12C1B11079200D32A0C /* PDFTests.m in Sources */,
 				21B109961B10DC6200C7738C /* AdjustmentTests.m in Sources */,

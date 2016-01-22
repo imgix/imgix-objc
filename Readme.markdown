@@ -2,7 +2,7 @@
 
 ⚠️ This is a work in progress. ⚠️
 
-[![Build Status](https://travis-ci.org/soffes/imgix-objc.svg?branch=master)](https://travis-ci.org/soffes/imgix-objc) [![Coverage Status](https://coveralls.io/repos/soffes/imgix-objc/badge.svg?branch=master)](https://coveralls.io/r/soffes/imgix-objc?branch=master)
+[![Build Status](https://travis-ci.org/imgix/imgix-objc.svg?branch=master)](https://travis-ci.org/imgix/imgix-objc) [![Coverage Status](https://coveralls.io/repos/soffes/imgix-objc/badge.svg?branch=master)](https://coveralls.io/r/soffes/imgix-objc?branch=master)
 
 Unofficial [Imgix](http://imgix.com) client for iOS.
 

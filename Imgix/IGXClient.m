@@ -64,12 +64,20 @@
 	}];
 
 	NSString *query = [components componentsJoinedByString:@"&"];
+    if (query.length > 0) {
+        query = [@"?" stringByAppendingString:query];
+    }
 
 	if (self.token) {
-		NSString *input = [[NSString alloc] initWithFormat:@"%@%@?%@", self.token, path, query];
+		NSString *input = [[NSString alloc] initWithFormat:@"%@%@%@", self.token, path, query];
 		NSString *signature = [input imgix_MD5];
+        
 		[components addObject:[[NSString alloc] initWithFormat:@"s=%@", signature]];
 		query = [components componentsJoinedByString:@"&"];
+        
+        if (query.length > 0) {
+            query = [@"?" stringByAppendingString:query];
+        }
 	}
 
 	return query;
@@ -83,9 +91,6 @@
 	}
 
 	NSString *query = [self queryStringWithPath:path];
-	if (query.length > 0) {
-		query = [@"?" stringByAppendingString:query];
-	}
 
 	NSString *string = [[NSString alloc] initWithFormat:@"%@://%@%@%@", scheme, self.host, path, query];
 	return [[NSURL alloc] initWithString:string];

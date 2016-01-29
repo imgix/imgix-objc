@@ -33,13 +33,14 @@
 		21BAB12C1B11079200D32A0C /* PDFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BAB12B1B11079200D32A0C /* PDFTests.m */; };
 		21BAB12E1B1107D700D32A0C /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BAB12D1B1107D700D32A0C /* TestHelper.m */; };
 		21EB0C8E1B10074F00CDC863 /* Imgix.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EB0C8D1B10074F00CDC863 /* Imgix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21EB0C941B10074F00CDC863 /* Imgix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB0C881B10074F00CDC863 /* Imgix.framework */; };
+		21EB0C941B10074F00CDC863 /* Imgix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB0C881B10074F00CDC863 /* Imgix.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		21EB0CA61B100A9E00CDC863 /* IGXClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EB0CA41B100A9E00CDC863 /* IGXClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21EB0CA71B100A9E00CDC863 /* IGXClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB0CA51B100A9E00CDC863 /* IGXClient.m */; };
+		8F854F301C5AD4D600914062 /* SigningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F854F2E1C5AD3F600914062 /* SigningTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		21EB0C951B10074F00CDC863 /* PBXContainerItemProxy */ = {
+		8F854F331C5ADE6400914062 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 21EB0C7F1B10074E00CDC863 /* Project object */;
 			proxyType = 1;
@@ -82,6 +83,7 @@
 		21EB0C931B10074F00CDC863 /* ImgixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImgixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EB0CA41B100A9E00CDC863 /* IGXClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGXClient.h; sourceTree = "<group>"; };
 		21EB0CA51B100A9E00CDC863 /* IGXClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGXClient.m; sourceTree = "<group>"; };
+		8F854F2E1C5AD3F600914062 /* SigningTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SigningTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				21BAB12F1B1107FA00D32A0C /* TestHelper.h */,
 				21BAB12D1B1107D700D32A0C /* TestHelper.m */,
 				21B109931B10DB7100C7738C /* QueryTests.m */,
+				8F854F2E1C5AD3F600914062 /* SigningTests.m */,
 				21B109951B10DC6200C7738C /* AdjustmentTests.m */,
 				21BAB1271B11078100D32A0C /* BackgroundTests.m */,
 				21BAB1291B11078900D32A0C /* FormatTests.m */,
@@ -252,7 +255,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				21EB0C961B10074F00CDC863 /* PBXTargetDependency */,
+				8F854F341C5ADE6400914062 /* PBXTargetDependency */,
 			);
 			name = ImgixTests;
 			productName = ImgixTests;
@@ -339,16 +342,17 @@
 				21BAB12E1B1107D700D32A0C /* TestHelper.m in Sources */,
 				21B109941B10DB7100C7738C /* QueryTests.m in Sources */,
 				21BAB1281B11078100D32A0C /* BackgroundTests.m in Sources */,
+				8F854F301C5AD4D600914062 /* SigningTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		21EB0C961B10074F00CDC863 /* PBXTargetDependency */ = {
+		8F854F341C5ADE6400914062 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 21EB0C871B10074E00CDC863 /* Imgix */;
-			targetProxy = 21EB0C951B10074F00CDC863 /* PBXContainerItemProxy */;
+			targetProxy = 8F854F331C5ADE6400914062 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -502,6 +506,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WARNING_CFLAGS = "";
 			};
 			name = Debug;
@@ -516,6 +521,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WARNING_CFLAGS = "";
 			};
 			name = Release;

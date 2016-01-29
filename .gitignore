@@ -1,2 +1,5 @@
 Documentation
 .DS_Store
+xcuserdata
+DerivedData
+*.xccheckout

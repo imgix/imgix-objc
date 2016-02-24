@@ -60,7 +60,11 @@
 	NSArray *keys = [[self.options allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
 	[keys enumerateObjectsUsingBlock:^(id key, NSUInteger idx, BOOL *stop) {
 		id value = self.options[key];
-		[components addObject:[[NSString alloc] initWithFormat:@"%@=%@", key, value]];
+        
+        NSString *encodedKey = [[[NSString alloc] initWithFormat:@"%@", key] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        NSString *encodedValue = [[[NSString alloc] initWithFormat:@"%@", value] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        
+		[components addObject:[[NSString alloc] initWithFormat:@"%@=%@", encodedKey, encodedValue]];
 	}];
 
 	NSString *query = [components componentsJoinedByString:@"&"];

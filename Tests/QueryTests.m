@@ -26,4 +26,9 @@
 	XCTAssertEqualObjects(@"bri=50&con=30&exp=20", [self.client URLWithPath:@"sam.jpg"].query);
 }
 
+- (void)testQueryStringValueEscaping {
+    self.client.downloadFileName = @"/foo'> <script>alert('hacked')</script><";
+    XCTAssertEqualObjects(@"dl=/foo'%3E%20%3Cscript%3Ealert('hacked')%3C/script%3E%3C", [self.client URLWithPath:@"sam.jpg"].query);
+}
+
 @end

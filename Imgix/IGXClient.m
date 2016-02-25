@@ -12,7 +12,7 @@
 @interface IGXClient ()
 @property (nonatomic, readwrite, igx_nonnull) NSString *host;
 @property (nonatomic, readwrite, igx_nullable) NSString *token;
-@property (nonatomic, readonly) NSMutableDictionary *options;
+@property (nonatomic, readwrite, igx_nonnull) NSDictionary *options;
 @end
 
 @implementation IGXClient
@@ -45,9 +45,9 @@
 
 #pragma mark - Configuration
 
-- (NSMutableDictionary *)options {
+- (NSDictionary *)options {
 	if (!_options) {
-		_options = [[NSMutableDictionary alloc] init];
+		_options = [[NSDictionary alloc] init];
 	}
 	return _options;
 }
@@ -62,7 +62,20 @@
 		id value = self.options[key];
         
         NSString *encodedKey = [[[NSString alloc] initWithFormat:@"%@", key] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-        NSString *encodedValue = [[[NSString alloc] initWithFormat:@"%@", value] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        NSString *stringifiedValue = [[NSString alloc] initWithFormat:@"%@", value];
+        NSString *encodedValue;
+        
+        if ([encodedKey hasSuffix:@"64"]) {
+            NSData *valueData = [stringifiedValue dataUsingEncoding:NSUTF8StringEncoding];
+            NSString *base64Value = [valueData base64EncodedStringWithOptions:(NSDataBase64EncodingOptions)kNilOptions];
+            
+            encodedValue = [base64Value stringByReplacingOccurrencesOfString:@"=" withString:@""];
+            encodedValue = [encodedValue stringByReplacingOccurrencesOfString:@"/" withString:@"_"];
+            encodedValue = [encodedValue stringByReplacingOccurrencesOfString:@"+" withString:@"-"];
+        } else {
+            encodedValue = [stringifiedValue stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        }
+        
         
 		[components addObject:[[NSString alloc] initWithFormat:@"%@=%@", encodedKey, encodedValue]];
 	}];
@@ -88,27 +101,26 @@
 }
 
 - (igx_nullable NSURL *)URLWithPath:(igx_nonnull NSString *)path {
-	NSString *scheme = self.secure ? @"https" : @"http";
-
-	if (![path hasPrefix:@"/"]) {
-		path = [@"/" stringByAppendingString:path];
-	}
-
-	NSString *query = [self queryStringWithPath:path];
-
-	NSString *string = [[NSString alloc] initWithFormat:@"%@://%@%@%@", scheme, self.host, path, query];
-	return [[NSURL alloc] initWithString:string];
+    if (!self.options) {
+        self.options = [[NSDictionary alloc] init];
+    }
+    
+    NSString *scheme = self.secure ? @"https" : @"http";
+    
+    if (![path hasPrefix:@"/"]) {
+        path = [@"/" stringByAppendingString:path];
+    }
+    
+    NSString *query = [self queryStringWithPath:path];
+    
+    NSString *string = [[NSString alloc] initWithFormat:@"%@://%@%@%@", scheme, self.host, path, query];
+    return [[NSURL alloc] initWithString:string];
 }
 
+- (igx_nullable NSURL *)URLWithPath:(igx_nonnull NSString *)path andOptions:(igx_nonnull NSDictionary *)options {
+    self.options = options;
 
-#pragma mark - Private
-
-- (void)setBool:(BOOL)value forKey:(igx_nonnull NSString *)key {
-	if (value) {
-		self.options[key] = @"true";
-	} else {
-		[self.options removeObjectForKey:key];
-	}
+    return [self URLWithPath:path];
 }
 
 @end

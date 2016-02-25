@@ -27,5 +27,6 @@
 #pragma mark - URL Building
 
 - (igx_nullable NSURL *)URLWithPath:(igx_nonnull NSString *)path;
+- (igx_nullable NSURL *)URLWithPath:(igx_nonnull NSString *)path andOptions:(igx_nonnull NSDictionary*)options;
 
 @end

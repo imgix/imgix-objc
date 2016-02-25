@@ -107,6 +107,10 @@
     
     NSString *scheme = self.secure ? @"https" : @"http";
     
+    if ([path hasPrefix:@"http://"] || [path hasPrefix:@"https://"]) {
+        path = (NSString * _Nonnull)[path stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]];
+    }
+    
     if (![path hasPrefix:@"/"]) {
         path = [@"/" stringByAppendingString:path];
     }

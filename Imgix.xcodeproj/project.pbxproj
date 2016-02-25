@@ -17,6 +17,8 @@
 		21EB0C941B10074F00CDC863 /* Imgix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB0C881B10074F00CDC863 /* Imgix.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		21EB0CA61B100A9E00CDC863 /* IGXClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EB0CA41B100A9E00CDC863 /* IGXClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21EB0CA71B100A9E00CDC863 /* IGXClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB0CA51B100A9E00CDC863 /* IGXClient.m */; };
+		8F6B94081C7E922500085C41 /* SettingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B94061C7E8FC300085C41 /* SettingsTests.m */; };
+		8F854F3A1C7E86A100914062 /* WebProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F854F381C7E868E00914062 /* WebProxyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		21EB0C931B10074F00CDC863 /* ImgixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImgixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EB0CA41B100A9E00CDC863 /* IGXClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGXClient.h; sourceTree = "<group>"; };
 		21EB0CA51B100A9E00CDC863 /* IGXClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGXClient.m; sourceTree = "<group>"; };
+		8F6B94061C7E8FC300085C41 /* SettingsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTests.m; sourceTree = "<group>"; };
+		8F854F381C7E868E00914062 /* WebProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebProxyTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				21BAB12F1B1107FA00D32A0C /* TestHelper.h */,
 				21BAB12D1B1107D700D32A0C /* TestHelper.m */,
 				21B109931B10DB7100C7738C /* QueryTests.m */,
+				8F6B94061C7E8FC300085C41 /* SettingsTests.m */,
+				8F854F381C7E868E00914062 /* WebProxyTests.m */,
 				21B1097F1B10CC1600C7738C /* Info.plist */,
 			);
 			path = Tests;
@@ -255,6 +261,8 @@
 			files = (
 				21BAB12E1B1107D700D32A0C /* TestHelper.m in Sources */,
 				21B109941B10DB7100C7738C /* QueryTests.m in Sources */,
+				8F6B94081C7E922500085C41 /* SettingsTests.m in Sources */,
+				8F854F3A1C7E86A100914062 /* WebProxyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

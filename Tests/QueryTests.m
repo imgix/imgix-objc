@@ -47,7 +47,7 @@
 
 - (void)testQueryStringValueEscaping {
     NSString *query = [self.client URLWithPath:@"sam.jpg" andOptions:@{ @"txt": @"/foo'> <script>alert('hacked')</script><" }].query;
-    XCTAssertEqualObjects(@"txt=/foo'%3E%20%3Cscript%3Ealert('hacked')%3C/script%3E%3C", query);
+    XCTAssertEqualObjects(@"txt=%2Ffoo'%3E%20%3Cscript%3Ealert('hacked')%3C%2Fscript%3E%3C", query);
 }
 
 - (void)testBase64ParamVariantsAreBase64Encoded {

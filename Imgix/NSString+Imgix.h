@@ -13,5 +13,6 @@
 @interface NSString (Imgix)
 
 - (igx_nonnull NSString *)imgix_MD5;
+- (nullable NSString *)encodeURIComponent;
 
 @end

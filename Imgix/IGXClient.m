@@ -61,7 +61,7 @@
 	[keys enumerateObjectsUsingBlock:^(id key, NSUInteger idx, BOOL *stop) {
 		id value = self.options[key];
         
-        NSString *encodedKey = [[[NSString alloc] initWithFormat:@"%@", key] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        NSString *encodedKey = [[[NSString alloc] initWithFormat:@"%@", key] encodeURIComponent];
         NSString *stringifiedValue = [[NSString alloc] initWithFormat:@"%@", value];
         NSString *encodedValue;
         
@@ -73,7 +73,7 @@
             encodedValue = [encodedValue stringByReplacingOccurrencesOfString:@"/" withString:@"_"];
             encodedValue = [encodedValue stringByReplacingOccurrencesOfString:@"+" withString:@"-"];
         } else {
-            encodedValue = [stringifiedValue stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+            encodedValue = [stringifiedValue encodeURIComponent];
         }
         
         
@@ -108,7 +108,7 @@
     NSString *scheme = self.secure ? @"https" : @"http";
     
     if ([path hasPrefix:@"http://"] || [path hasPrefix:@"https://"]) {
-        path = (NSString * _Nonnull)[path stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]];
+        path = (NSString * _Nonnull)[path encodeURIComponent];
     }
     
     if (![path hasPrefix:@"/"]) {

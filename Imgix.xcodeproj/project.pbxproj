@@ -7,36 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		214FC3F11B1136BA00B04DDF /* IGXClient+Stylize.h in Headers */ = {isa = PBXBuildFile; fileRef = 214FC3EF1B1136BA00B04DDF /* IGXClient+Stylize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		214FC3F21B1136BA00B04DDF /* IGXClient+Stylize.m in Sources */ = {isa = PBXBuildFile; fileRef = 214FC3F01B1136BA00B04DDF /* IGXClient+Stylize.m */; };
-		214FC3F41B1139A500B04DDF /* StylizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 214FC3F31B1139A500B04DDF /* StylizeTests.m */; };
 		21B109841B10CF9100C7738C /* NSString+Imgix.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B109821B10CF9100C7738C /* NSString+Imgix.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		21B109851B10CF9100C7738C /* NSString+Imgix.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109831B10CF9100C7738C /* NSString+Imgix.m */; };
-		21B109891B10D66300C7738C /* IGXFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B109881B10D65000C7738C /* IGXFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21B1098B1B10D68600C7738C /* IGXCropMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B1098A1B10D68600C7738C /* IGXCropMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21B1098D1B10D7AD00C7738C /* IGXCropMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B1098C1B10D7AD00C7738C /* IGXCropMode.m */; };
-		21B1098F1B10D82000C7738C /* IGXFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B1098E1B10D82000C7738C /* IGXFormat.m */; };
 		21B109941B10DB7100C7738C /* QueryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109931B10DB7100C7738C /* QueryTests.m */; };
-		21B109961B10DC6200C7738C /* AdjustmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109951B10DC6200C7738C /* AdjustmentTests.m */; };
-		21B109991B10E16200C7738C /* IGXClient+Adjustment.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B109971B10E16200C7738C /* IGXClient+Adjustment.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21B1099A1B10E16200C7738C /* IGXClient+Adjustment.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109981B10E16200C7738C /* IGXClient+Adjustment.m */; };
 		21B1099C1B10E1FC00C7738C /* IGXClient+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B1099B1B10E1D400C7738C /* IGXClient+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		21B1099F1B10E24200C7738C /* IGXClient+Format.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B1099D1B10E24200C7738C /* IGXClient+Format.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21B109A01B10E24200C7738C /* IGXClient+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B1099E1B10E24200C7738C /* IGXClient+Format.m */; };
-		21B109A31B10E28300C7738C /* IGXClient+Background.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B109A11B10E28300C7738C /* IGXClient+Background.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21B109A41B10E28300C7738C /* IGXClient+Background.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109A21B10E28300C7738C /* IGXClient+Background.m */; };
-		21B109AA1B10E9F800C7738C /* IGXClient+PDF.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B109A81B10E9F800C7738C /* IGXClient+PDF.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21B109AB1B10E9F800C7738C /* IGXClient+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109A91B10E9F800C7738C /* IGXClient+PDF.m */; };
 		21BAB1261B10FA1200D32A0C /* IGXNullability.h in Headers */ = {isa = PBXBuildFile; fileRef = 21BAB1251B10F9E000D32A0C /* IGXNullability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21BAB1281B11078100D32A0C /* BackgroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BAB1271B11078100D32A0C /* BackgroundTests.m */; };
-		21BAB12A1B11078900D32A0C /* FormatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BAB1291B11078900D32A0C /* FormatTests.m */; };
-		21BAB12C1B11079200D32A0C /* PDFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BAB12B1B11079200D32A0C /* PDFTests.m */; };
 		21BAB12E1B1107D700D32A0C /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BAB12D1B1107D700D32A0C /* TestHelper.m */; };
 		21EB0C8E1B10074F00CDC863 /* Imgix.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EB0C8D1B10074F00CDC863 /* Imgix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21EB0C941B10074F00CDC863 /* Imgix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB0C881B10074F00CDC863 /* Imgix.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		21EB0CA61B100A9E00CDC863 /* IGXClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EB0CA41B100A9E00CDC863 /* IGXClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21EB0CA71B100A9E00CDC863 /* IGXClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB0CA51B100A9E00CDC863 /* IGXClient.m */; };
-		8F854F301C5AD4D600914062 /* SigningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F854F2E1C5AD3F600914062 /* SigningTests.m */; };
+		8F6B94081C7E922500085C41 /* SettingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B94061C7E8FC300085C41 /* SettingsTests.m */; };
+		8F854F3A1C7E86A100914062 /* WebProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F854F381C7E868E00914062 /* WebProxyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,31 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		214FC3EF1B1136BA00B04DDF /* IGXClient+Stylize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IGXClient+Stylize.h"; sourceTree = "<group>"; };
-		214FC3F01B1136BA00B04DDF /* IGXClient+Stylize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IGXClient+Stylize.m"; sourceTree = "<group>"; };
-		214FC3F31B1139A500B04DDF /* StylizeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StylizeTests.m; sourceTree = "<group>"; };
 		21B1097F1B10CC1600C7738C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21B109821B10CF9100C7738C /* NSString+Imgix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Imgix.h"; sourceTree = "<group>"; };
 		21B109831B10CF9100C7738C /* NSString+Imgix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Imgix.m"; sourceTree = "<group>"; };
-		21B109881B10D65000C7738C /* IGXFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGXFormat.h; sourceTree = "<group>"; };
-		21B1098A1B10D68600C7738C /* IGXCropMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGXCropMode.h; sourceTree = "<group>"; };
-		21B1098C1B10D7AD00C7738C /* IGXCropMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGXCropMode.m; sourceTree = "<group>"; };
-		21B1098E1B10D82000C7738C /* IGXFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGXFormat.m; sourceTree = "<group>"; };
 		21B109931B10DB7100C7738C /* QueryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryTests.m; sourceTree = "<group>"; };
-		21B109951B10DC6200C7738C /* AdjustmentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustmentTests.m; sourceTree = "<group>"; };
-		21B109971B10E16200C7738C /* IGXClient+Adjustment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IGXClient+Adjustment.h"; sourceTree = "<group>"; };
-		21B109981B10E16200C7738C /* IGXClient+Adjustment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IGXClient+Adjustment.m"; sourceTree = "<group>"; };
 		21B1099B1B10E1D400C7738C /* IGXClient+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IGXClient+Private.h"; sourceTree = "<group>"; };
-		21B1099D1B10E24200C7738C /* IGXClient+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IGXClient+Format.h"; sourceTree = "<group>"; };
-		21B1099E1B10E24200C7738C /* IGXClient+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IGXClient+Format.m"; sourceTree = "<group>"; };
-		21B109A11B10E28300C7738C /* IGXClient+Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IGXClient+Background.h"; sourceTree = "<group>"; };
-		21B109A21B10E28300C7738C /* IGXClient+Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IGXClient+Background.m"; sourceTree = "<group>"; };
-		21B109A81B10E9F800C7738C /* IGXClient+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IGXClient+PDF.h"; sourceTree = "<group>"; };
-		21B109A91B10E9F800C7738C /* IGXClient+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IGXClient+PDF.m"; sourceTree = "<group>"; };
 		21BAB1251B10F9E000D32A0C /* IGXNullability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGXNullability.h; sourceTree = "<group>"; };
-		21BAB1271B11078100D32A0C /* BackgroundTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundTests.m; sourceTree = "<group>"; };
-		21BAB1291B11078900D32A0C /* FormatTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormatTests.m; sourceTree = "<group>"; };
-		21BAB12B1B11079200D32A0C /* PDFTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFTests.m; sourceTree = "<group>"; };
 		21BAB12D1B1107D700D32A0C /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
 		21BAB12F1B1107FA00D32A0C /* TestHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		21EB0C881B10074F00CDC863 /* Imgix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Imgix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +46,8 @@
 		21EB0C931B10074F00CDC863 /* ImgixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImgixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EB0CA41B100A9E00CDC863 /* IGXClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGXClient.h; sourceTree = "<group>"; };
 		21EB0CA51B100A9E00CDC863 /* IGXClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGXClient.m; sourceTree = "<group>"; };
-		8F854F2E1C5AD3F600914062 /* SigningTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SigningTests.m; sourceTree = "<group>"; };
+		8F6B94061C7E8FC300085C41 /* SettingsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTests.m; sourceTree = "<group>"; };
+		8F854F381C7E868E00914062 /* WebProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebProxyTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +75,8 @@
 				21BAB12F1B1107FA00D32A0C /* TestHelper.h */,
 				21BAB12D1B1107D700D32A0C /* TestHelper.m */,
 				21B109931B10DB7100C7738C /* QueryTests.m */,
-				8F854F2E1C5AD3F600914062 /* SigningTests.m */,
-				21B109951B10DC6200C7738C /* AdjustmentTests.m */,
-				21BAB1271B11078100D32A0C /* BackgroundTests.m */,
-				21BAB1291B11078900D32A0C /* FormatTests.m */,
-				21BAB12B1B11079200D32A0C /* PDFTests.m */,
-				214FC3F31B1139A500B04DDF /* StylizeTests.m */,
+				8F6B94061C7E8FC300085C41 /* SettingsTests.m */,
+				8F854F381C7E868E00914062 /* WebProxyTests.m */,
 				21B1097F1B10CC1600C7738C /* Info.plist */,
 			);
 			path = Tests;
@@ -127,29 +87,8 @@
 			children = (
 				21EB0CA41B100A9E00CDC863 /* IGXClient.h */,
 				21EB0CA51B100A9E00CDC863 /* IGXClient.m */,
-				21B109971B10E16200C7738C /* IGXClient+Adjustment.h */,
-				21B109981B10E16200C7738C /* IGXClient+Adjustment.m */,
-				21B109A11B10E28300C7738C /* IGXClient+Background.h */,
-				21B109A21B10E28300C7738C /* IGXClient+Background.m */,
-				21B1099D1B10E24200C7738C /* IGXClient+Format.h */,
-				21B1099E1B10E24200C7738C /* IGXClient+Format.m */,
-				21B109A81B10E9F800C7738C /* IGXClient+PDF.h */,
-				21B109A91B10E9F800C7738C /* IGXClient+PDF.m */,
-				214FC3EF1B1136BA00B04DDF /* IGXClient+Stylize.h */,
-				214FC3F01B1136BA00B04DDF /* IGXClient+Stylize.m */,
 			);
 			name = Client;
-			sourceTree = "<group>";
-		};
-		21B109A61B10E30C00C7738C /* Types */ = {
-			isa = PBXGroup;
-			children = (
-				21B109881B10D65000C7738C /* IGXFormat.h */,
-				21B1098E1B10D82000C7738C /* IGXFormat.m */,
-				21B1098A1B10D68600C7738C /* IGXCropMode.h */,
-				21B1098C1B10D7AD00C7738C /* IGXCropMode.m */,
-			);
-			name = Types;
 			sourceTree = "<group>";
 		};
 		21B109A71B10E31100C7738C /* Private */ = {
@@ -186,7 +125,6 @@
 				21EB0C8D1B10074F00CDC863 /* Imgix.h */,
 				21BAB1251B10F9E000D32A0C /* IGXNullability.h */,
 				21B109A51B10E30600C7738C /* Client */,
-				21B109A61B10E30C00C7738C /* Types */,
 				21B109A71B10E31100C7738C /* Private */,
 				21EB0C8B1B10074F00CDC863 /* Resources */,
 			);
@@ -208,18 +146,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21B109A31B10E28300C7738C /* IGXClient+Background.h in Headers */,
 				21EB0C8E1B10074F00CDC863 /* Imgix.h in Headers */,
 				21B109841B10CF9100C7738C /* NSString+Imgix.h in Headers */,
-				21B109AA1B10E9F800C7738C /* IGXClient+PDF.h in Headers */,
-				21B109891B10D66300C7738C /* IGXFormat.h in Headers */,
 				21BAB1261B10FA1200D32A0C /* IGXNullability.h in Headers */,
-				21B1099F1B10E24200C7738C /* IGXClient+Format.h in Headers */,
 				21B1099C1B10E1FC00C7738C /* IGXClient+Private.h in Headers */,
-				21B109991B10E16200C7738C /* IGXClient+Adjustment.h in Headers */,
 				21EB0CA61B100A9E00CDC863 /* IGXClient.h in Headers */,
-				21B1098B1B10D68600C7738C /* IGXCropMode.h in Headers */,
-				214FC3F11B1136BA00B04DDF /* IGXClient+Stylize.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,14 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21B109851B10CF9100C7738C /* NSString+Imgix.m in Sources */,
-				21B1098D1B10D7AD00C7738C /* IGXCropMode.m in Sources */,
-				21B109A41B10E28300C7738C /* IGXClient+Background.m in Sources */,
-				21B109A01B10E24200C7738C /* IGXClient+Format.m in Sources */,
 				21EB0CA71B100A9E00CDC863 /* IGXClient.m in Sources */,
-				214FC3F21B1136BA00B04DDF /* IGXClient+Stylize.m in Sources */,
-				21B1099A1B10E16200C7738C /* IGXClient+Adjustment.m in Sources */,
-				21B109AB1B10E9F800C7738C /* IGXClient+PDF.m in Sources */,
-				21B1098F1B10D82000C7738C /* IGXFormat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,14 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21BAB12A1B11078900D32A0C /* FormatTests.m in Sources */,
-				214FC3F41B1139A500B04DDF /* StylizeTests.m in Sources */,
-				21BAB12C1B11079200D32A0C /* PDFTests.m in Sources */,
-				21B109961B10DC6200C7738C /* AdjustmentTests.m in Sources */,
 				21BAB12E1B1107D700D32A0C /* TestHelper.m in Sources */,
 				21B109941B10DB7100C7738C /* QueryTests.m in Sources */,
-				21BAB1281B11078100D32A0C /* BackgroundTests.m in Sources */,
-				8F854F301C5AD4D600914062 /* SigningTests.m in Sources */,
+				8F6B94081C7E922500085C41 /* SettingsTests.m in Sources */,
+				8F854F3A1C7E86A100914062 /* WebProxyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

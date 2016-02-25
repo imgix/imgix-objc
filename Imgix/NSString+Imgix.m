@@ -25,4 +25,11 @@
 	return md5;
 }
 
+- (igx_nullable NSString *)encodeURIComponent {
+    NSString *unreserved = @"-_.!~*'()";
+    NSMutableCharacterSet *allowed = [NSMutableCharacterSet alphanumericCharacterSet];
+    [allowed addCharactersInString:unreserved];
+    return [self stringByAddingPercentEncodingWithAllowedCharacters: allowed];
+}
+
 @end

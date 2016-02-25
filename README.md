@@ -11,7 +11,7 @@ Written in Objective-C for maximum flexiblity. It's annotated with [nullability]
 
 All of the options are implemented as properties with inline documentation so it's easy to manipulate your images without looking up their documentation. Simply create an `IGXClient` with your host and token. (You can specify `nil` for  your token if you don't want signed URLs.)
 
-Now you can adjust the properties to customize your image. All URLs you create with `URLWithPath:` will have those settings applied. This is especially handy if you use the same options everywhere.
+Once you have a client, you can call `URLWithPath:` to generate an imgix URL for a given path. To generate URLs with parameters, just call `URLWithPath:andOptions:` with an NSDictionary of options instead.
 
 The following example is in Swift, but you can of course use this library in Objective-C as well.
 
@@ -24,8 +24,6 @@ let client = IGXClient(host: "nothingmagical.imgix.net", token: "sMTidnYXXg9NB4q
 // Generate a signed URL
 client.URLWithPath("sam.jpg")
 // => https://nothingmagical.imgix.net/sam.jpg?s=...
-
-// Increase the brightness
 
 // Generate another signed URL, with adjusted brightness
 client.URLWithPath("sam.jpg", options: ["bri": 10])

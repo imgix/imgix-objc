@@ -26,9 +26,8 @@ client.URLWithPath("sam.jpg")
 // => https://nothingmagical.imgix.net/sam.jpg?s=...
 
 // Increase the brightness
-client.brightness = 10
 
-// Generate another signed URL
-client.URLWithPath("sam.jpg")
+// Generate another signed URL, with adjusted brightness
+client.URLWithPath("sam.jpg", options: ["bri": 10])
 // => https://nothingmagical.imgix.net/sam.jpg?bri=10&s=...
 ```

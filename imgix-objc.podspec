@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "imgix-objc"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "The official iOS & macOS imgix client"
 
   # This description is used to generate tags and improve search results.

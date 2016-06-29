@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "imgix-objc"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "The official iOS & macOS imgix client"
 
   # This description is used to generate tags and improve search results.
@@ -82,7 +82,7 @@ Written in Objective-C for maximum flexiblity. It's annotated with nullability s
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/imgix/imgix.js.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/imgix/imgix-objc.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

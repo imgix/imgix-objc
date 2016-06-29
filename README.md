@@ -2,7 +2,7 @@
 
 # imgix-objc [![Build Status](https://travis-ci.org/imgix/imgix-objc.svg?branch=master)](https://travis-ci.org/imgix/imgix-objc) [![Coverage Status](https://coveralls.io/repos/soffes/imgix-objc/badge.svg?branch=master)](https://coveralls.io/r/soffes/imgix-objc?branch=master) [![Slack Status](http://slack.imgix.com/badge.svg)](http://slack.imgix.com)
 
-Official [imgix](http://imgix.com) client for iOS.
+Official [imgix](http://imgix.com) client for iOS and macOS.
 
 Written in Objective-C for maximum flexiblity. It's annotated with [nullability](https://developer.apple.com/swift/blog/?id=25) so it works well with Swift.
 

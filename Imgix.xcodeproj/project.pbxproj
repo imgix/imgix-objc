@@ -19,6 +19,7 @@
 		21EB0CA71B100A9E00CDC863 /* IGXClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB0CA51B100A9E00CDC863 /* IGXClient.m */; };
 		8F6B94081C7E922500085C41 /* SettingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B94061C7E8FC300085C41 /* SettingsTests.m */; };
 		8F854F3A1C7E86A100914062 /* WebProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F854F381C7E868E00914062 /* WebProxyTests.m */; };
+		8FB4E7681D24497E00423147 /* imgix-objc.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4E7671D24497E00423147 /* imgix-objc.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		21EB0CA51B100A9E00CDC863 /* IGXClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGXClient.m; sourceTree = "<group>"; };
 		8F6B94061C7E8FC300085C41 /* SettingsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTests.m; sourceTree = "<group>"; };
 		8F854F381C7E868E00914062 /* WebProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebProxyTests.m; sourceTree = "<group>"; };
+		8FB4E7671D24497E00423147 /* imgix-objc.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "imgix-objc.podspec"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				21EB0C8A1B10074F00CDC863 /* Imgix */,
 				21B1097D1B10CC1600C7738C /* Tests */,
 				21EB0C891B10074F00CDC863 /* Products */,
+				8FB4E7671D24497E00423147 /* imgix-objc.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB4E7681D24497E00423147 /* imgix-objc.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

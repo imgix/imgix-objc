@@ -2,7 +2,7 @@
 
 # Deprecation Notice
 
-imgix-objc has been deprecated in favor of [imgix-swift](https://github.com/imgix/imgix-swift). Don't worry, Objective-C users, imgix-swift works great with Swift _and_ Objective-C codebases! Make sure to [check it out](https://github.com/imgix/imgix-swift).
+imgix-objc has been deprecated in favor of [imgix-swift](https://github.com/imgix/imgix-swift), but don't worry, Objective-C users! imgix-swift works great with Swift _and_ Objective-C codebases! Make sure to [check it out](https://github.com/imgix/imgix-swift).
 
 
 ---

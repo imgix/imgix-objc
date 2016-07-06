@@ -1,12 +1,13 @@
+![imgix logo](https://assets.imgix.net/imgix-logo-web-2014.pdf?page=2&fm=png&w=120)
+
 # Deprecation Notice
 
 imgix-objc has been deprecated in favor of [imgix-swift](https://github.com/imgix/imgix-swift). Don't worry, Objective-C users, imgix-swift works great with Swift _and_ Objective-C codebases! Make sure to [check it out](https://github.com/imgix/imgix-swift).
 
+
 ---
 
-![imgix logo](https://assets.imgix.net/imgix-logo-web-2014.pdf?page=2&fm=png&w=200&h=200)
-
-# imgix-objc [![Build Status](https://travis-ci.org/imgix/imgix-objc.svg?branch=master)](https://travis-ci.org/imgix/imgix-objc) [![Coverage Status](https://coveralls.io/repos/soffes/imgix-objc/badge.svg?branch=master)](https://coveralls.io/r/soffes/imgix-objc?branch=master) [![Slack Status](http://slack.imgix.com/badge.svg)](http://slack.imgix.com)
+# imgix-objc
 
 Official [imgix](http://imgix.com) client for iOS and macOS.
 
